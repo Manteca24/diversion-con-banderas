@@ -1,10 +1,70 @@
+/* */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
 
 h1 {
   color: #333;
+}
+
+#countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.country {
+  margin: 10px;
+  border: 1px, solid, black;
+  background-color: white;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2{
+  margin: 5px; 
+}
+.flag {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 500px;
+  width: 80%;
+}
+
+.close-button {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-flag {
+  width: 100%;
+  height: auto;
 }
